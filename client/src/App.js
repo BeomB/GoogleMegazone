@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const App = () => {
   return (
-    <Map className="all"></Map>
+    <Map className="all"></Map>  ///
   )
 }
 export default App;

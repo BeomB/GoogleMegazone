@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+.title{
+    color: black;
+    font-family: 'Jua', sans-serif;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#webcam-container{
+    text-align: center;
+}
+
+#WebCam {
+    border-radius: 25px;
+}
+
+.result{
+    font-family: 'Jua', sans-serif;
+    text-align : center;
+}
+
+.input_box{
+    text-align: center;
+    margin-left: 130px;
+
+}
+
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #5cb85c;
+    cursor: pointer;
+    border: 1px solid #4cae4c;
+    border-radius: .25em;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    font-family: 'Jua', sans-serif;
+    width: 100px;
+  }
+  
+  .filebox label:hover {
+    background-color: #6ed36e;
+  }
+  
+  .filebox label:active {
+    background-color: #367c36;
+  }
+  
+  .filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .test_img{
+    text-align: center;
+  }
+
+  .container
+  {
+    text-align: center;
+  }
+  
+  #preview_img
+  {
+    border-radius: 25px;
+  }
+
+  .filebox{
+    margin-bottom: 2px;
+  }
+
+  #start_Btn{
+    display: inline-block;
+    width: 120px;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #323ff8;
+    cursor: pointer;
+    border: 1px solid #4b75e9;
+    border-radius: .25em;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    font-family: 'Jua', sans-serif;
+  }
+
+  #start_Btn:hover{
+    background-color: #5e91ff;
+  }
+
+  #start_Btn:active{
+    background-color: #007ef5;
+  }
+
+  #label-container
+  {
+    font-family: 'Jua', sans-serif;
+  
+  }

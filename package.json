@@ -1,0 +1,24 @@
+{
+  "name": "GoogleMegaZone",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@reach/combobox": "^0.16.5",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
+    "react-cool-onclickoutside": "^1.7.0",
+    "react-places-autocomplete": "^7.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}

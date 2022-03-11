@@ -1,0 +1,5 @@
+#dependencies
+/node_modules
+
+#database
+/database.json

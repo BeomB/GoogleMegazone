@@ -3,7 +3,7 @@ import * as tmImage from '@teachablemachine/image'
 import "../App.css"
 
 export default function Teachable_img(props) {
-  const URL = "https://teachablemachine.withgoogle.com/models/WHik95_Bw/" // 첨성대, 남대문  Test 분류
+  const URL = "https://teachablemachine.withgoogle.com/models/_SOVOi3Dr/" 
   let model;
   let labelContainer;
   let maxPredictions;
@@ -12,7 +12,7 @@ export default function Teachable_img(props) {
   const [imageSrc, setImageSrc] = useState('');
   
   useEffect(() => {
-    console.log(result);
+    props.setCount()
     props.setResultValue(result)
   }, [result]);
 
@@ -61,7 +61,7 @@ export default function Teachable_img(props) {
       }
     }
 
-    var classPrediction = "사진 속 랜드마크 위치는 " + prediction[maxIndex].className + " 입니다!"
+    var classPrediction = "사진 속 브랜드는 " + prediction[maxIndex].className + " 입니다!"
     labelContainer.innerHTML = classPrediction;
 
     const ChangeResult = (e) => {
@@ -73,6 +73,7 @@ export default function Teachable_img(props) {
   }
 
   const start = () => {
+    props.setIsShow(false)
     document.getElementById("label-container").style.display = "none";
   }
 
@@ -89,7 +90,7 @@ export default function Teachable_img(props) {
         </div>
         <div>{result === 0 ? <h6>이미지를 측정하고 있어요..</h6> : <h6></h6>}</div>
         <div id="label-container"></div><br />
-        <div className="filebox"> <label onClick={start} htmlFor="ex_file" >사진 업로드</label> <input type="file" id="ex_file"
+        <div className="filebox"> <label onClick={start} htmlFor="ex_file" >브랜드 찾기</label> <input type="file" id="ex_file"
           onChange={(e) => { encodeFileToBase64(e.target.files[0]); ChangeResultto0(); init(); }} /> </div>
       </main>
     </div>

@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-body {
+body 
+{
   background-color: #e9d5c6
 }
 
 .title
 {
-    color: #3b2616;
-    font-family: 'Jua', sans-serif;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
+  color: #3b2616;
+  font-family: 'Jua', sans-serif;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .result
 {
-    font-family: 'Jua', sans-serif;
-    text-align : center;
+  font-family: 'Jua', sans-serif;
+  text-align : center;
 }
 
-.filebox{
+.filebox
+{
   display:inline-block;
 }
 
@@ -32,21 +34,21 @@ body {
 
 .filebox label 
 {
-    position: static;
-    display: inline-block;
-    padding: .5em .75em;
-    color: #4a301c;
-    font-size: inherit;
-    line-height: normal;
-    vertical-align: middle;
-    background-color: #a99e6f;
-    cursor: pointer;
-    border: 1px solid #d1a788;;
-    border-radius: .25em;
-    -webkit-transition: background-color 0.2s;
-    transition: background-color 0.2s;
-    font-family: 'Jua', sans-serif;
-    width: 100px;
+  position: static;
+  display: inline-block;
+  padding: .5em .75em;
+  color: #4a301c;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #a99e6f;
+  cursor: pointer;
+  border: 1px solid #d1a788;;
+  border-radius: .25em;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  font-family: 'Jua', sans-serif;
+  width: 100px;
   }
   
   .filebox label:hover 
@@ -92,44 +94,86 @@ body {
   border: 1px solid #d1a788;;
   background-color: #a99e6f;
   display: inline-block;
-width: 100px;
-height: 40px;
-margin-left: 100px;
-margin-top: -70px;
-margin-bottom: 20px;
-font-family: 'Jua', sans-serif;
-position: static;
+  width: 100px;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: -70px;
+  margin-bottom: 20px;
+  font-family: 'Jua', sans-serif;
+  position: static;
 }
 
-#btn_location:hover{
+#btn_location:hover
+{
   background-color: #d1a788;
 }
 
+.resultList
+{
+  background-color: #e9d5c6;
+  font-family: 'Jua', sans-serif;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  margin-bottom: 3px
+}
 
-  .search{
-    display: inline-block;
-  }
-  .search input{
-    padding: 0.5rem;
-    font-size: 1.0rem;
-    width:100%;
-  }
+.showDataBtn
+{
+  color: #4a301c;
+  border: 1px solid #d1a788;;
+  background-color: #a99e6f;
+  display: inline-block;
+  border-radius: .25em;
+  width: 120px;
+  height: 40px;
+  margin-top: -90px;
+  margin-bottom: 20px;
+  font-family: 'Jua', sans-serif;
+  position: static;
+}
 
-  .locate{
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    z-index: 10;
-  }
+.showDataBtn:hover
+{
+  background-color: #d1a788;
+}
+
+.resultInputBox
+{
+  visibility: hidden;
+}
+
+.search
+{
+  width: 0;
+  display: inline-block;
+}
+
+.search input
+{
+  padding: 0.5rem;
+  font-size: 1.0rem;
+  width:100%;
+}
+
+.locate
+{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  z-index: 10;
+}
   
-  .locate img{
-    width: 30px;
-    cursor: pointer;
-  }
+.locate img
+{
+  width: 30px;
+  cursor: pointer;
+}
 
-  .btn{
+  .btn
+  {
     position: absolute;
     top: 0.00000001rem;
     left: 115%;
@@ -140,21 +184,30 @@ position: static;
     z-index: 10;
   }
   
-  #googlemap-streetview{
+  #googlemap-streetview
+  {
     width: 300px; 
     height: 300px;
     border: 0.1em solid #d1a788;
     border-radius: 30px;
     display:inline-block;
     margin:0px auto
-    
    }
-   .googleMap{
+
+   .googleMap
+   {
      width: 500px;
      height: 500px;
      display: contents;
    }
 
-   .mapView{
+   .inforWindow
+   {
+     
+   }
+
+   .mapView
+   {
+     margin-top: 40px;
      text-align: center;
    }

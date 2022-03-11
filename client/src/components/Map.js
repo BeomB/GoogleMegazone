@@ -9,7 +9,9 @@ import title_logo from '../image/title_logo.png'
 import { GoogleMap, useLoadScript, Marker, InfoWindow, } from "@react-google-maps/api";
 
 const Map = () => {
+  
   const libraries = ["places, drawing,geometry, localContext , visualization "];
+  
   const options = {
     // style: mapStyles,
     disableDefaultUI: true,
@@ -35,7 +37,9 @@ const Map = () => {
   const [selected, setSelected] = useState(null);
   const [searchPlace, setSearchPlace] = useState([]);
   const [resultValue, setResultValue] = useState({});
-  
+  const [resultData, setResultData] = useState("");
+  const [count, setCount] = useState()
+  const [isShow, setIsShow] = useState(false);
 
   const showMarker = useCallback(() => {
     setMarkers(current => [
@@ -60,6 +64,11 @@ const Map = () => {
   useEffect(() => {
     showMarker()
   }, [])
+  
+  useEffect(()=>{
+
+  },[count])
+
 
   if (loadError) return "Error Loading maps";
   if (!isLoaded) return "Loading Maps";
@@ -68,11 +77,11 @@ const Map = () => {
     <>
     <div>
       <br />
-      <h3 className='title'><img src={title_logo} style={{width:"30px", height:"30px", marginRight:"10px",marginTop : "-10px" }}/>사진으로 위치찾기</h3>
+      <h3 className='title'>ㅤ<img src={title_logo} style={{width:"30px", height:"30px", marginRight:"10px",marginTop : "-10px" }}/>브랜드를 찾아줘</h3>
 
       <div className='btn_group'>
-      <Predict_img setResultValue={setResultValue}></Predict_img>
-      <Search panTo={panTo} place={place} getPlace={getPlace} getSearchPlace={getSearchPlace} resultValue={resultValue} />
+      <Predict_img setResultValue={setResultValue} setCount={setCount} setIsShow={setIsShow}></Predict_img>
+      <Search panTo={panTo} place={place} getPlace={getPlace} getSearchPlace={getSearchPlace} resultValue={resultValue} setResultData={setResultData} isShow={isShow} setIsShow={setIsShow}/>
       </div>
       
       
@@ -93,13 +102,24 @@ const Map = () => {
                 position={{ lat: place.lat, lng: place.lng }}
                 icon={{
                   url: "/marker.svg",
-                  scaledSize: new window.google.maps.Size(30, 30),
+                  scaledSize: new window.google.maps.Size(40, 40),
                   origin: new window.google.maps.Point(0, 0),
                   anchor: new window.google.maps.Point(15, 15)
                 }}
                 onClick={() => {
                   setSelected(place)
                   panTo(place)
+                  fetch("http://localhost:5001/database")
+                  .then((res)=>res.json())
+                  .then(data=>{
+                    for(var i=0; i<data.length; i++){
+                      if(resultValue===data[i].name){
+                        console.log(data[i].count)
+                        setCount(data[i].count)
+                        console.log(count)
+                      }
+                    }
+                  })
                 }}
               />
             ))}
@@ -107,16 +127,17 @@ const Map = () => {
               onCloseClick={() => {
                 setSelected(null);
                 panTo(place)
+                
               }}
             >
-              <div>
-                <h2>정보</h2>
-
-                <p>위치: {resultValue}</p>
+              <div className='inforWindow'>
+                <p>{resultData}</p>
+                <a href={"https://www.google.com/maps/search/"+resultData}>
+                  <button>정보 보기</button>
+                </a>
+                <p>count: {count}</p>
+                {/* <button onClick={findStreet}>길찾기</button> */}
                 
-                
-
-                <p>위치: {searchPlace}</p>
               </div>
             </InfoWindow>) : null}
           </GoogleMap>

@@ -3,8 +3,10 @@ import Geocode from "react-geocode";
 
 const Data = (props) => {
     useEffect(() => {
+        
     }, []);
     function goLocate() {
+        props.setResultData(props.value)
         Geocode.fromAddress(props.value)
         .then((res)=>{        
                     console.log(res.results[0].geometry.location)
@@ -16,8 +18,7 @@ const Data = (props) => {
     return (
         <>
             {/* <div onClick={goLoate}>{props.value}</div> */}<br/>
-            <button onClick={goLocate}>{props.value}</button>
-
+            <button className="resultList" onClick={goLocate}>{props.value}</button>
         </>
 
     )

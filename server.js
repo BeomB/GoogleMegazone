@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(cors())
 
+
 const connection = mysql.createConnection({
     host: conf.host,
     user: conf.user,
@@ -31,7 +32,7 @@ app.get('/', (req, res) => {
 
 app.get('/database', (req, res) => {
     try {
-        connection.query('SELECT * FROM practice ', function (err, rows, fields) {
+        connection.query('SELECT * FROM whatBrand', function (err, rows, fields) {
             res.header("Access-Control-Allow-Origin", "*");
             res.send(rows)
         })
@@ -39,6 +40,14 @@ app.get('/database', (req, res) => {
         console.log(error)
     }
    
+})
+app.put('/database:data', (req,res)=>{
+    let sql = 'UPDATE whatBrand SET count=count+1 WHERE name=?';
+    let name = req.params.data
+    connection.query(sql,name, (err,rows,fields)=>{
+        res.header("Access-Control-Allow-Origin", "*")
+        res.send(rows)
+    })
 })
 
 

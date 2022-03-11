@@ -16,7 +16,7 @@ const Locate = ({ panTo, place, getPlace }) => {
         )
     }
     return (
-        <div className='resultListForm'>
+        <div>
             <button className="locate" onClick={myLocate}>
                 {/* <img src="./compass.svg" alt="" /> */}
             </button>

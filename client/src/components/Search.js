@@ -25,7 +25,7 @@ const Search = ({ panTo, place, getPlace, getSearchPlace, resultValue, setResult
         },
     });
     Geocode.setApiKey(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
-    Geocode.setLanguage('kor')
+    // Geocode.setLanguage('en')
     // Geocode.setRegion('es')
     Geocode.setRegion('kor')
     Geocode.enableDebug()
@@ -85,7 +85,7 @@ const Search = ({ panTo, place, getPlace, getSearchPlace, resultValue, setResult
                     data.map(({ description }) => {
                         return(<Data key={description} value={description} panTo={panTo} getPlace={getPlace} getSearchPlace={getSearchPlace} setResultData={setResultData}/>)
                     }    
-                )}<br/></>}
+                )}</>}
             
         </>
     )

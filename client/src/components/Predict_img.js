@@ -90,7 +90,7 @@ export default function Teachable_img(props) {
         </div>
         <div>{result === 0 ? <h6>이미지를 측정하고 있어요..</h6> : <h6></h6>}</div>
         <div id="label-container"></div><br />
-        <div className="filebox"> <label onClick={start} htmlFor="ex_file" >브랜드 찾기</label> <input type="file" id="ex_file"
+        <div className="filebox"> <label onClick={start} htmlFor="ex_file" >사진 업로드</label> <input type="file" id="ex_file"
           onChange={(e) => { encodeFileToBase64(e.target.files[0]); ChangeResultto0(); init(); }} /> </div>
       </main>
     </div>

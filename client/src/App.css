@@ -201,9 +201,26 @@ body
      display: contents;
    }
 
+   .how{
+    color: #d39162; 
+    font-size:8px; 
+    margin-top:-45px;
+    font-family : 'Jua', sans-serif;
+    margin-left: 25px;
+   }
+
    .inforWindow
    {
-     
+     font-family: 'Jua', sans-serif;
+   }
+
+   .btnShow
+   {
+     font-family: 'Jua', sans-serif;
+     color: blue;
+     background-color: #FFF;
+     border: 0;
+     outline: 0;
    }
 
    .mapView

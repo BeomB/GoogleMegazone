@@ -17,7 +17,8 @@
     "nodemon": "^2.0.15",
     "react-cool-onclickoutside": "^1.7.0",
     "react-modal": "^3.14.4",
-    "react-places-autocomplete": "^7.3.0"
+    "react-places-autocomplete": "^7.3.0",
+    "recharts": "^2.1.9"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

@@ -1,0 +1,25 @@
+{
+"database" : [
+    {"name":"나이키","count":59},
+    {"name":"내셔널지오그래픽","count":0},
+    {"name":"노스페이스","count":56},
+    {"name":"뉴발란스","count":1},
+    {"name":"다이나핏","count":0},
+    {"name":"데상트","count":0},
+    {"name":"디스커버리","count":1},
+    {"name":"르꼬끄","count":0},
+    {"name":"르카프","count":0},
+    {"name":"리복","count":0},
+    {"name":"미즈노","count":0},
+    {"name":"스파이더","count":0},
+    {"name":"아디다스 스포츠","count":0},
+    {"name":"아디다스 오리지널","count":4},
+    {"name":"언더아머","count":0},
+    {"name":"에베레스트","count":5},
+    {"name":"엘레쎄","count":1},
+    {"name":"카파","count":1},
+    {"name":"케이스위스","count":1},
+    {"name":"푸마","count":0},
+    {"name":"휠라","count":0}
+]
+}

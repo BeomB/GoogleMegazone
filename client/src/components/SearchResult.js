@@ -7,7 +7,7 @@ const SearchResult = () => {
     const [bestBrand, setBestBrand] = useState()
     const [bestCount, setBestCount] = useState(0)
     useEffect(()=>{
-        fetch("http://34.64.61.193:5001/database")
+        fetch("http://localhost:3001/database")
         .then((res)=>(res.json()))
         .then(data => {
             var bestNum= 0

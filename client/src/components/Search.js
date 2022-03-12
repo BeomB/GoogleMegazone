@@ -51,7 +51,7 @@ const Search = ({ panTo, place, getPlace, getSearchPlace, resultValue, setResult
             setIsShow(true)
 
             
-            const url=`http://34.64.61.193:5001/database${resultValue}`
+            const url=`http://localhost:3001/database${resultValue}`
             const data = {
                 data: resultValue
             }

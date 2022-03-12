@@ -86,7 +86,7 @@ const Map = () => {
  
 
   if (loadError) return "Error Loading maps";
-  if (!isLoaded) return "Loading Maps";
+  if (!isLoaded) return "페이지를 로딩중입니다.";
 
   return (
     <>

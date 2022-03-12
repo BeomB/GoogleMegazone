@@ -213,8 +213,9 @@ body
    {
     background-color: #a99e6f;
     font-family: 'Jua', sans-serif;
-    width: 700px;
-    height: 500px;
+    font-size: 12px;
+    width: 90%;
+    height: 50%;
    }
 
    .modalItem

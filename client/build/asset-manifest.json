@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8f63086.css",
+    "main.js": "/static/js/main.1fd3a96e.js",
+    "static/js/787.e49b1cae.chunk.js": "/static/js/787.e49b1cae.chunk.js",
+    "static/media/Qlogo.png": "/static/media/Qlogo.6ec694a50e69be97e8a7.png",
+    "static/media/prize.png": "/static/media/prize.076b7da87c394018ac1f.png",
+    "static/media/title_logo.png": "/static/media/title_logo.0adcbc452b40db5e82df.png",
+    "static/media/light.png": "/static/media/light.ce1e90f08dc6eebc1eb6.png",
+    "index.html": "/index.html",
+    "main.d8f63086.css.map": "/static/css/main.d8f63086.css.map",
+    "main.1fd3a96e.js.map": "/static/js/main.1fd3a96e.js.map",
+    "787.e49b1cae.chunk.js.map": "/static/js/787.e49b1cae.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8f63086.css",
+    "static/js/main.1fd3a96e.js"
+  ]
+}

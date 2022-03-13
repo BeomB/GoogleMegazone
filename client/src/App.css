@@ -186,8 +186,8 @@ body
   
   #googlemap-streetview
   {
-    width: 300px; 
-    height: 300px;
+    width: 800px; 
+    height: 500px;
     border: 0.1em solid #d1a788;
     border-radius: 30px;
     display:inline-block;
@@ -213,9 +213,9 @@ body
    {
     background-color: #a99e6f;
     font-family: 'Jua', sans-serif;
-    font-size: 12px;
-    width: 90%;
-    height: 50%;
+    font-size: 15px;
+    width: 35%;
+    height: 60%;
    }
 
    .modalItem
@@ -232,7 +232,7 @@ body
     font-family: 'Jua', sans-serif;
     border: 0;
      outline: 0;
-     margin-left: 250px;
+     margin-left: 450px;
      width: 100px;
      border: 1px solid #d1a788;
      border-radius: .25em;

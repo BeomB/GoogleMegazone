@@ -32,19 +32,19 @@ app.get('/', (req, res) => {
 
 app.get('/database', (req, res) => {
     try {
-        connection.query('SELECT * FROM whatBrand', function (err, rows, fields) {
+        connection.query('SELECT * FROM duo97', function (err, rows, fields) {
             res.header("Access-Control-Allow-Origin", "*");
             res.send(rows)
         })
     } catch (error) {
         console.log(error)
     }
-
+   
 })
-app.put('/database:data', (req, res) => {
-    let sql = 'UPDATE whatBrand SET count=count+1 WHERE name=?';
+app.put('/database:data', (req,res)=>{
+    let sql = 'UPDATE duo97 SET count=count+1 WHERE name=?';
     let name = req.params.data
-    connection.query(sql, name, (err, rows, fields) => {
+    connection.query(sql,name, (err,rows,fields)=>{
         res.header("Access-Control-Allow-Origin", "*")
         res.send(rows)
     })

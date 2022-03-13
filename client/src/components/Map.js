@@ -31,8 +31,8 @@ const Map = () => {
     zoomControl: true,
   }
   const center = {
-    lat: 37.380826639239,
-    lng: 126.93074727847419
+    lat: 37.498222,
+    lng: 127.0341627
   }
 
   const getPlace = (place) => {
@@ -132,7 +132,7 @@ const Map = () => {
                   onClick={() => {
                     setSelected(place)
                     panTo(place)
-                    fetch("http://localhost:3001/database")
+                    fetch("http://localhost:5001/database")
                       .then((res) => res.json())
                       .then(data => {
                         for (var i = 0; i < data.length; i++) {

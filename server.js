@@ -41,7 +41,7 @@ app.get('/database', (req, res) => {
     }
    
 })
-app.put('/database:data', (req,res)=>{
+app.put('/database/:data', (req,res)=>{
     let sql = 'UPDATE duo97 SET count=count+1 WHERE name=?';
     let name = req.params.data
     connection.query(sql,name, (err,rows,fields)=>{

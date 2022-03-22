@@ -132,7 +132,7 @@ const Map = () => {
                   onClick={() => {
                     setSelected(place)
                     panTo(place)
-                    fetch("http://localhost:5001/database")
+                    fetch("http://localhost:8080/database")
                       .then((res) => res.json())
                       .then(data => {
                         for (var i = 0; i < data.length; i++) {

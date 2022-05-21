@@ -2,7 +2,7 @@
 
 **[Githu](https://github.com/beombeom1119/GoogleMegazone)b**
 
-[GitHub - beombeom1119/GoogleMegazone](https://github.com/beombeom1119/GoogleMegazone)
+[GitHub - beombeom1119/GoogleMegazone](https://github.com/beombeom1119/GoogleMegazone) 
 
 <aside>
 💡 Google Megazone “클라우드를 부탁해" 공모전 출품작 입니다. 구글 클라우드에서 제공하는 Google Map API 와 GCP를 활용하고, 웹 환경에서는 REACT와 Teachable Machine을 활용하여 사진 속 브랜드를 찾아주는 기능을 완성하였습니다. 해당 프로젝트의 백엔드는 node Js 버전과 Spring Boot 버전 두가지가 있습니다.
